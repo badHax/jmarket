@@ -1,0 +1,26 @@
+/* To learn more about this file see: https://angular.io/config/tsconfig. */
+{
+  "compileOnSave": false,
+  "compilerOptions": {
+    "emitDecoratorMetadata": true,
+    "experimentalDecorators": true,
+    "baseUrl": "src",
+    "paths": {
+      "@services/*": ["app/_services/*"],
+      "@helpers/*": ["app/_helpers/*"],
+      "@env": ["../environments/"],
+    },
+    "outDir": "./dist/out-tsc",
+    "sourceMap": true,
+    "declaration": false,
+    "downlevelIteration": true,
+    "moduleResolution": "node",
+    "importHelpers": true,
+    "target": "es2015",
+    "module": "es2020",
+    "lib": [
+      "es2018",
+      "dom"
+    ],
+  }
+}
