@@ -3,7 +3,7 @@
 }
 
 .sidenav {
-  width: 200px;
+  width: 120px;
 }
 
 .sidenav .mat-toolbar {
@@ -21,4 +21,11 @@
   }
   .flex-spacer{
     flex-grow: 1;
+}
+
+mat-toolbar{
+  z-index: 3 !important;
+  button{
+    z-index: 3 !important;
+  }
 }

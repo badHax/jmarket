@@ -23,7 +23,12 @@
             </label><a class="form-recovery" href="#">Forgot Password?</a>
           </div>
           <div class="form-group">
-            <button mat-raised-button color="primary" type="submit">Log In</button>
+            <button *ngIf="!loading" mat-raised-button color="primary" type="submit" #loginButton>
+              Log In
+            </button>
+            <button *ngIf="loading" mat-raised-button color="primary" type="submit" #loginButton display="flex">
+              <mat-spinner disabled="disabled" [diameter]='20' [color]="'accent'" #loginLoader style="margin: 0 auto;"></mat-spinner>
+            </button>
           </div>
         </form>
       </div>
